@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snake</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
 
- <style> 
-    body{
-      display: flex;
-      height: 100vh;
-      align-items: center;
-      justify-content: center;
-      background: #3b3b3d;
-    }
+    <style>
 
-    .text{
-      color: rgb(182, 182, 182);
-      font-size: 1em;
-      font-family: 'Press Start 2P', cursive;
-      position: absolute;
-      top: calc(50% + 150px);
-    }
-  
-</style>
-</head>
-<body>
-  <div id="bouncer">
-    <canvas width="300" height="300" style="border-radius:5px;background:white;border:1px solid #d3d3d3;" id="canvas"></canvas>
-  </div>
-  <p class="text">A tiny square bouncing infinitely...</p>
-  <script src="script.js"></script>
-</body>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+      }
+      #bouncer {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background: #3b3b3d;
+      }
+
+      .text {
+        color: rgb(182, 182, 182);
+        font-size: 1em;
+        font-family: "Press Start 2P", cursive;
+        position: absolute;
+        text-align: center;
+        top: calc(50% + 190px);
+        transform: translate(-50%, -50%);
+        left: 50%;
+      }
+
+      button {
+        height: 30px;
+        position: absolute;
+        top: calc(50% + 220px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        background: #456c83;
+        box-shadow: 0 0 8px -3px rgb(148, 131, 131);
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="bouncer">
+      <canvas
+        width="300"
+        height="300"
+        style="border-radius: 5px; background: white; border: 1px solid #d3d3d3"
+        id="canvas"
+      ></canvas>
+      <span class="text">A tiny square bouncing infinitely...</p>
+    </div>
+    <button id="colorizer"></button>
+    <script src="script.js"></script>
+  </body>
 </html>
